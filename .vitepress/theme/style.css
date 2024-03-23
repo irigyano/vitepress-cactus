@@ -46,3 +46,9 @@ span.lang {
   color: #999; */
   display: none;
 }
+
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
