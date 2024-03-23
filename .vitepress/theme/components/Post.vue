@@ -16,7 +16,7 @@ const date = computed(() => posts[findCurrentIndex()].date);
 </script>
 
 <template>
-  <header class="pt-6">
+  <header>
     <h1 class="text-[#2bbc8a] text-2xl font-bold">
       {{ data.title }}
     </h1>

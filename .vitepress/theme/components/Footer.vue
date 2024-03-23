@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="text-[#666] text-sm absolute bottom-0 flex justify-between w-full pb-5"
+    class="text-[#666] text-sm absolute bottom-0 block text-center sm:flex justify-between w-full pb-5"
   >
     <div>Inspired by @probberechts</div>
     <div>
