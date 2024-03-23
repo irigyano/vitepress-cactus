@@ -6,7 +6,7 @@
     <div>
       <a
         class="hover:text-[#858585] underline pr-4 mr-4 border-[#666] border-r-[1px]"
-        href="/iriwrap/"
+        href="/"
         >Home</a
       >
       <a

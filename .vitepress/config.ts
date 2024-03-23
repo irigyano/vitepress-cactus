@@ -5,5 +5,4 @@ export default defineConfig({
   cleanUrls: true,
   title: "iriwrap",
   description: "A VitePress Site",
-  base: "/iriwrap/",
 });
