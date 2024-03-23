@@ -24,4 +24,3 @@ const date = computed(() => posts[findCurrentIndex()].date);
   </header>
   <Content class="prose prose-green prose-invert max-w-none" />
 </template>
-../posts.data.js
