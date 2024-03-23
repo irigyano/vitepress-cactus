@@ -1,0 +1,20 @@
+{
+  "Blog Frontmatter": {
+    "prefix": "markdown frontmatter",
+    "body": [
+      "---",
+      "title: $TM_FILENAME_BASE",
+      "date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      "---",
+      "",
+      "## Title",
+      "",
+      "first paragraph",
+      "",
+      "## Reference (If any)",
+      "",
+      "[Link](https://irigyano.github.io)"
+    ],
+    "description": "Blog Frontmatter"
+  }
+}

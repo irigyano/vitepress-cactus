@@ -1,21 +1,23 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
+import Home from "./Home.vue";
+import Post from "./Post.vue";
+import Footer from "./Footer.vue";
 
 // https://vitepress.dev/reference/runtime-api#usedata
 const { site, frontmatter } = useData();
 </script>
 
 <template>
-  <div class="bg-blue-500 min-h-[100dvh]" v-if="frontmatter.home">
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>
-    <ul>
-      <li><a href="/markdown-examples.html">Markdown Examples</a></li>
-      <li><a href="/api-examples.html">API Examples</a></li>
-    </ul>
-  </div>
-  <div v-else>
-    <a href="/">Home</a>
-    <Content />
+  <div class="py-16 min-h-[100dvh] relative">
+    <div v-if="frontmatter.home">
+      <header class="pb-8">
+        <h1 class="font-bold text-2xl">{{ site.title }}</h1>
+      </header>
+      <Home />
+    </div>
+
+    <Post v-else />
+    <Footer />
   </div>
 </template>
