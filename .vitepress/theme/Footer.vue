@@ -12,6 +12,7 @@
       <a
         class="hover:text-[#858585] underline"
         href="https://github.com/irigyano"
+        target="_blank"
         >GitHub</a
       >
     </div>
