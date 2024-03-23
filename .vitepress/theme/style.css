@@ -11,6 +11,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   font-family: "Menlo", "Meslo LG", monospace;
+  min-width: unset;
 }
 
 /* Code Block */
@@ -45,4 +46,17 @@ span.lang {
   font-size: 0.75em;
   color: #999; */
   display: none;
+}
+
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.prose p {
+  font-size: 14px;
+  line-height: 1.725;
+  text-align: justify;
+  /* hyphens: auto; */
 }

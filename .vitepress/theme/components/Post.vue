@@ -2,7 +2,7 @@
 import { useData, useRoute } from "vitepress";
 import Date from "./Date.vue";
 import { computed } from "vue";
-import { data as posts } from "./posts.data.js";
+import { data as posts } from "../posts.data.js";
 
 const { frontmatter: data } = useData();
 const route = useRoute();
@@ -16,7 +16,7 @@ const date = computed(() => posts[findCurrentIndex()].date);
 </script>
 
 <template>
-  <header class="pt-6">
+  <header>
     <h1 class="text-[#2bbc8a] text-2xl font-bold">
       {{ data.title }}
     </h1>

@@ -28,6 +28,9 @@ export default createContentLoader("posts/*.md", {
 });
 
 function formatDate(raw: string): Post["date"] {
+  // pinned post
+  if (raw === "📌") raw = "2027-10-24T00:00:00.000Z";
+
   const date = new Date(raw);
   date.setUTCHours(12);
   return {
