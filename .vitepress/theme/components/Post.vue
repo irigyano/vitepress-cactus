@@ -2,7 +2,7 @@
 import { useData, useRoute } from "vitepress";
 import Date from "./Date.vue";
 import { computed } from "vue";
-import { data as posts } from "./posts.data.js";
+import { data as posts } from "../posts.data.js";
 
 const { frontmatter: data } = useData();
 const route = useRoute();
@@ -24,3 +24,4 @@ const date = computed(() => posts[findCurrentIndex()].date);
   </header>
   <Content class="prose prose-green prose-invert max-w-none" />
 </template>
+../posts.data.js

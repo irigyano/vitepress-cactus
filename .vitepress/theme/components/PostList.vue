@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { data as posts } from "./posts.data.js";
+import { data as posts } from "../posts.data.js";
 import Date from "./Date.vue";
 </script>
 
@@ -13,3 +13,4 @@ import Date from "./Date.vue";
     </li>
   </ul>
 </template>
+../posts.data.js
