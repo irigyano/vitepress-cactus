@@ -3,10 +3,6 @@ title: Docker 🐳
 date: 2023-10-29
 ---
 
-## TL;DR
-
-### Why Docker?
-
 ![dockertldr](https://courses.devopsdirective.com/_next/image?url=%2Fdocker-beginner-to-pro%2F01-01-development.jpg&w=750&q=75)
 
 - Development
