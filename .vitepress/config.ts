@@ -20,4 +20,5 @@ export default defineConfig({
   lang: "zh-TW",
   appearance: "force-dark",
   cleanUrls: true,
+  srcExclude: ["**/README.md"],
 });
