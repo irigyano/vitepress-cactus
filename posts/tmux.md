@@ -25,7 +25,7 @@ L-[0-9] : move to a specific window by number
 
 L-: : command mode
 
-L + &: Delete current window.
+L-& : Delete current window.
 
 ## Session
 
