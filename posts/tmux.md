@@ -1,5 +1,5 @@
 ---
-title: tmux Keybinds
+title: tmux Key Bindings
 date: 2024-03-25
 ---
 
@@ -24,6 +24,8 @@ L-[n/p] : move to the next or previous window
 L-[0-9] : move to a specific window by number
 
 L-: : command mode
+
+L + &: Delete current window.
 
 ## Session
 
