@@ -3,31 +3,31 @@ title: tmux Keybinds
 date: 2024-03-25
 ---
 
-Leader Key: Ctrl + Space
-
 ## Pane
 
-L + % - Split the window into two panes horizontally.
+L-% : split the window into two panes horizontally
 
-L + " - Split the window into two panes vertically.
+L-" : split the window into two panes vertically
 
-L + x - Close pane.
+L-x : close pane
 
-L + Arrow - Navigation.
+L-Arrow : navigation
+
+L(Hold) : resizing
 
 ## Window
 
-L + c - Create a new window.
+L-c : create a new window
 
-L + [np] - Move to the next or previous window.
+L-[n/p] : move to the next or previous window
 
-L + [0-9] - Move to a specific window by number.
+L-[0-9] : move to a specific window by number
 
-L + : - Enter the command line to type commands. Tab completion is available.
+L-: : command mode
 
 ## Session
 
-L + d: Detach from the current session.
+L-d: detach from the current session
 
 ```zsh
 tmux ls
