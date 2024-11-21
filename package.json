@@ -2,15 +2,15 @@
   "name": "iriwarp",
   "type": "module",
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "@types/bun": "latest",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.1",
-    "vitepress": "^1.0.1"
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/bun": "^1.1.13",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vitepress": "^1.5.0"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.6.3"
   },
   "scripts": {
     "dev": "vitepress dev",
