@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
-import PostList from "./PostList.vue";
+import PostList from "../components/PostList.vue";
 
 const { site, frontmatter, page } = useData();
 </script>
