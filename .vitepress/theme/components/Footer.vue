@@ -1,20 +1,16 @@
+<script setup lang="ts">
+import { useData } from "vitepress";
+const { frontmatter } = useData();
+</script>
+
 <template>
-  <footer
-    class="text-[#666] text-sm absolute bottom-0 block text-center sm:flex justify-between w-full pb-5"
-  >
-    <div>Inspired by @probberechts</div>
-    <div>
-      <a
-        class="hover:text-[#858585] underline pr-4 mr-4 border-[#666] border-r-[1px]"
-        href="/"
-        >Home</a
-      >
-      <a
-        class="hover:text-[#858585] underline"
-        href="https://github.com/irigyano"
-        target="_blank"
-        >GitHub</a
-      >
-    </div>
+  <footer class="flex gap-4">
+    <a v-if="!frontmatter.home" class="hover:text-primary" href="/">..</a>
+    <a
+      class="underline hover:decoration-primary"
+      href="https://github.com/irigyano"
+      target="_blank"
+      >GitHub</a
+    >
   </footer>
 </template>

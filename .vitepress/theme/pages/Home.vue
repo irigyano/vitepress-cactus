@@ -8,7 +8,7 @@ const { site, frontmatter, page } = useData();
 <template>
   <div v-if="frontmatter.home">
     <header class="pb-8">
-      <h1 class="font-bold text-2xl">{{ site.title }}</h1>
+      <h1 class="font-bold text-[32px] leading-10">{{ site.title }}</h1>
     </header>
     <PostList />
   </div>

@@ -4,6 +4,7 @@
     "body": [
       "---",
       "title: $TM_FILENAME_BASE",
+      "description: Blog Frontmatter",
       "date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
       "---",
       "",
@@ -16,6 +17,5 @@
       "[Link](https://irigyano.github.io)",
       "![Image](/images/filename.ext)"
     ],
-    "description": "Blog Frontmatter"
   }
 }

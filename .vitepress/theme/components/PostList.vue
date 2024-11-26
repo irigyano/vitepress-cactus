@@ -4,13 +4,16 @@ import Date from "./Date.vue";
 </script>
 
 <template>
-  <ul class="">
-    <li class="flex gap-4 py-1" v-for="{ title, url, date, excerpt } of posts">
+  <ul>
+    <li
+      class="flex flex-col xl:flex-row py-1 xl:gap-4"
+      v-for="{ title, url, date } of posts"
+      :key="url"
+    >
       <Date :date="date" />
-      <a class="underline hover:decoration-[#d480aa] break-all" :href="url">{{
-        title
-      }}</a>
+      <a class="underline hover:decoration-primary" :href="url">
+        {{ title }}
+      </a>
     </li>
   </ul>
 </template>
-../posts.data.js

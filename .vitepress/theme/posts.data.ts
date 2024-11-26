@@ -1,4 +1,5 @@
 import { createContentLoader } from "vitepress";
+import { formatDate } from "../utils";
 
 export interface Post {
   title: string;
@@ -26,19 +27,3 @@ export default createContentLoader("posts/*.md", {
       .sort((a, b) => b.date.time - a.date.time);
   },
 });
-
-function formatDate(raw: string): Post["date"] {
-  // pinned post
-  if (raw === "📌") raw = "2027-10-24T00:00:00.000Z";
-
-  const date = new Date(raw);
-  date.setUTCHours(12);
-  return {
-    time: +date,
-    string: date.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "short",
-      day: "2-digit",
-    }),
-  };
-}

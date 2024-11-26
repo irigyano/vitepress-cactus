@@ -1,26 +1,17 @@
 <script setup lang="ts">
 import { useData, useRoute } from "vitepress";
-import { computed } from "vue";
-import { data as posts } from "../posts.data.js";
 import Date from "../components/Date.vue";
-
-const { frontmatter: data } = useData();
-const route = useRoute();
-
-function findCurrentIndex() {
-  return posts.findIndex((p) => p.url === route.path);
-}
-
-// use the customData date which contains pre-resolved date info
-const date = computed(() => posts[findCurrentIndex()].date);
+import { formatDate } from "../../utils.js";
+const { frontmatter } = useData();
 </script>
 
 <template>
   <header>
-    <h1 class="text-[#2bbc8a] text-2xl font-bold">
-      {{ data.title }}
+    <h1 class="text-[32px] leading-10 font-bold">
+      {{ frontmatter.title }}
     </h1>
-    <Date :date="date" />
+    <Date :date="formatDate(frontmatter.date)" />
   </header>
-  <Content class="prose prose-green prose-invert max-w-none" />
+  <!-- Content is a special tag from VitePress -->
+  <Content class="vp-doc" />
 </template>

@@ -2,7 +2,6 @@
   "name": "iriwarp",
   "type": "module",
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.15",
     "@types/bun": "^1.1.13",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",

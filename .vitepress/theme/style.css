@@ -1,62 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --vp-font-family-base: "Roboto Mono", "Noto Sans TC", "Noto Sans SC", serif;
+  --vp-c-brand-1: #f472b6;
+  --vp-c-brand-2: #f759aa;
+}
+
+/* Overriding VitePress default theme */
 body {
-  background-color: #1d1f21;
-  color: #c9cacc;
-  max-width: 48rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: "Menlo", "Meslo LG", monospace;
   min-width: unset;
 }
 
-/* Code Block */
-
-div.vp-adaptive-theme {
-  position: relative;
-}
-
-button.copy {
-  position: absolute;
-  top: 0.2rem;
-  right: 0.2rem;
-  border: 1px solid var(--vp-code-copy-code-border-color);
-  border-radius: 4px;
-  width: 40px;
-  height: 40px;
-  background-image: var(--vp-icon-copy);
-  background-color: var(--vp-code-copy-code-bg);
-  background-position: 50%;
-  background-size: 20px;
-  background-repeat: no-repeat;
-}
-
-button.copy:hover {
-  border-color: var(--vp-code-copy-code-hover-border-color);
-  background-color: var(--vp-code-copy-code-hover-bg);
-}
-
-span.lang {
-  /* position: absolute;
-  right: 0.5rem;
-  font-size: 0.75em;
-  color: #999; */
-  display: none;
-}
-
-.prose img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.prose p {
-  font-size: 14px;
-  line-height: 1.725;
-  text-align: justify;
-  /* hyphens: auto; */
+.vp-doc {
+  h2 {
+    margin: 16px 0;
+    border-top: unset;
+  }
 }
