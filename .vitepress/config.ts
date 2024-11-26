@@ -1,8 +1,8 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "iriwarp",
-  titleTemplate: ":title - iriwarp",
+  title: "widetime",
+  titleTemplate: ":title - widetime",
   description: "irigyano's warp",
   lang: "zh-TW",
   appearance: "force-dark",

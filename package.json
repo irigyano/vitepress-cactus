@@ -1,5 +1,4 @@
 {
-  "name": "iriwarp",
   "type": "module",
   "devDependencies": {
     "@types/bun": "^1.1.13",
